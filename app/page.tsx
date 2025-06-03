@@ -16,6 +16,7 @@ export default function Home() {
       setFact(response.data.fact);
     } catch (error) {
       setFact("Lorem Ipsum Cats");
+      console.error("Error fetching cat fact:", error);
     } finally {
       setLoading(false);
     }
